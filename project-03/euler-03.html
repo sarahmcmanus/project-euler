@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <title>Google</title>
-        <link rel="stylesheet" type="text/css" href="eulerstyle.css">
-        <script type="text/javascript" src="euler-03.js"></script>    
+        <link rel="stylesheet" type="text/css" href="../eulerstyle.css">
+        <!--<script type="text/javascript" src="euler-03.js"></script> -->
+        <!--You can put scripts up here or at the bottom, depending on when you want it to load, or use jQuery -->    
     </head>
     <body>
 		<h1>Project Euler</h1>
@@ -13,13 +14,15 @@
  
 		<p>What is the largest prime factor of the number 600851475143 ?</p>
  
-		<p class="note">Extra notes from The Odin Project:</p>
- 
-		<p class="note">... just solve for numbers smaller than 1,000 and don't worry about making it efficient. <br> You won't need to do any crazy math -- think iteration and make the computer do the work. <br> Consider it extra credit to make your solution solve for larger numbers in a way that isn't too slow.</p>
- 
-		<h2>Answer</h2>
+		<h3>Type your number here:</h3>
+		<input type="number" id="input"/>
+		<input type="button" id="button" value="Factor it!"/>
+
+		<h3>Answer</h3>
 		<p>Here is the list of prime factors:</p>
 		<p id="answer1"></p>
 		<p>Here is the greatest prime factor:</p>
 		<p id="answer2"></p>
+
+    <script type="text/javascript" src="euler-03.js"></script>
     </body>
