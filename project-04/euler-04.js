@@ -26,16 +26,16 @@ That'll do
 */
 
 var getlargestPalPdct = function(digits) {
-	for (i=998001, i>=10000, i--) {
+	for (i=998001; i>=10000; i--) {
 		//here we need to check if it's a palindrome
 		//first, we convert i to a string
 		var pal = i;
 		var stringPal = pal.toString();
 		//not sure about syntax here; palCheck should teturn true
 		//if pal is a palindrome
-		var palCheck = function() {
+		var palCheck = function(digits) {
 			//Here, we can substitute j < digits... or something?
-			for (j=0, j<3, j++) {
+			for (j=0; j<digits; j++) {
 				if (stringPal[j] === stringPal[stringPal.length - (j + 1)]) {
 					return true;
 				} 
@@ -46,7 +46,7 @@ var getlargestPalPdct = function(digits) {
 		}
 		//check for divisibility
 		var pdctCheck = function() {
-			for (k=999, k>99, k--) {
+			for (k=999; k>99; k--) {
 				if (pal % k === 0 && 100 <= pal / k <= 999) {
 					return true;
 				}
@@ -94,12 +94,12 @@ function handleSubmit (e) {
       return;
     }
 
-  /*
+  
   var largestPalPdct = getLargestPalPdct(inputNum);
 
   var answer1 = document.getElementById("answer1");
  
   answer1.innerHTML = largestPalPdct;
-  */
+  
  
   }
