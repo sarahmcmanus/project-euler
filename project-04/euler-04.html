@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
        	 <link rel="stylesheet" type="text/css" href="../eulerstyle.css">    
-       	 <script type="text/javascript" src="euler-04.js"></script>
     </head>
     <body>
 		<h1>Project Euler</h1>
@@ -14,12 +13,16 @@
 
 		
 		<h3>Type the number of digits here:</h3>
+		<p class="warning">WARNING: Only go up to 4, or it will take a REALLY long time and could crash!</p>
 		<input type="number" id="input"/>
 	
 		<input type="button" id="button" value="Find the largest palindrome product!"/>
 
 		<h3>Answer</h3>
-		<p>Here is the largest palindrome product:</p>
-		<p id="answer1"></p>
-		
+		<p>The largest palindrome product is:</p>
+		<p class ="answer" id="answer1"></p>
+		<p>Its factors are:</p>
+		<p class ="answer" id="answer2"></p>
+	
+	<script type="text/javascript" src="euler-04.js"></script>	
     </body>
