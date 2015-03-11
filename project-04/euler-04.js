@@ -132,5 +132,5 @@ function handleSubmit (e) {
  
   var answer2 = document.getElementById("answer2");
  
-  answer2.innerHTML = factors[0] + " and " + factors[1];
+  answer2.innerHTML = factors[factors.length - 2] + " and " + factors[factors.length -1];
 }
