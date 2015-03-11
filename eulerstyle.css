@@ -2,6 +2,15 @@ body {
   font-family: sans-serif;
 }
  
+.answer {
+	font-weight: bold;
+}
+
+.warning {
+	color: red;
+	font-weight: bold;
+}
+
 .note {
   font-size: small;
 }
